@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>涪陵公安</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="resources/css/right.css" />
+    <!--   <link rel="stylesheet" href="resources/css/jquery-ui.min.css" /> -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=0mWBmtCu1yAUKkGVwOZ0i3Be"></script>
+</head>
+
+<body id="containment-wrapper">
+    <div class="right">
+        <div class='tab_title'>
+            <section class="cx"></section>
+            <div class='monitor'></div>
+            <div class='gps'></div>
+            <div class='alarm'></div>
+        </div>
+        <div class="right_div">
+            <div class="right_tittle">
+                <p>第三人民法院</p>
+            </div>
+            <div class="tab_cotainer">
+                <div class='monitor_con'>
+                    <table class="monitor_table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>第三人民法院</p>
+                                    <p>人民路五四广场大街28号</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>第三人民法院</p>
+                                    <p>人民路五四广场大街28号</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class='tab_gps'>
+                    <div class='top'>
+                        <span class='selected'>警车</span>
+                        <span>警员</span>
+                    </div>
+                    <div class='con tab_gps_con'>
+                        <table class="ploiceCar">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>渝-GD162警</p>
+                                        <p>人民路五四广场大街28号</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>渝-GD162警</p>
+                                        <p>人民路五四广场大街28号</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class='con none'>
+                        <table class="car">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>张帆</p>
+                                        <p>人民路五四广场大街28号</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class='alarm_con'>
+                    <table class="alarm_table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>第三人民法院</p>
+                                    <p>人民路五四广场大街28号</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>第三人民法院</p>
+                                    <p>人民路五四广场大街28号</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="logo"></div>
+        <p>可视调度指挥系统</p>
+        <p>HDS VISUAL COMMAND SCHEDULING SYSTEM</p>
+    </header>
+    <div class="input">
+        <p>1,210</p>
+    </div>
+    <div class="TM">
+        <div class="biao"></div>
+        <div class="time"></div>
+        <div class="date_total">
+            <p class="date"></p>
+            <p class="week"></p>
+        </div>
+    </div>
+    <div class="btn">
+        <div class="sx"></div>
+        <div class="jc"></div>
+        <div class="jy"></div>
+        <div class="jq"></div>
+        <div class="jk"></div>
+    </div>
+    <div class="FL ui-widget-content">
+        <div class="office">
+            <div class="office_icon"></div>
+            <div class="office_tittle">涪陵区公安局</div>
+            <div class="offiec_button down"></div>
+            <ul class="trend_ul">
+                <li class="trend_sel">日</li>
+                <li>周</li>
+                <li>月</li>
+                <li>年</li>
+            </ul>
+        </div>
+        <div id="office_chart"></div>
+    </div>
+    <div class="LX ui-widget-content">
+        <div class="type">
+            <div class="type_icon"></div>
+            <p class="type_tittle">警情类型</p>
+            <div class="type_xl down"></div>
+        </div>
+        <div class="type_type">
+            <div id="type_chart"></div>
+            <div class="type_chart_right">
+                <ul class="type-ul">
+                    <li>
+                        <div></div><span>入室盗窃 428</span></li>
+                    <li>
+                        <div></div><span>偷电动车 120</span></li>
+                    <li>
+                        <div></div><span>盗摩托车 540</span></li>
+                    <li>
+                        <div></div><span>盗窃汽车 721</span></li>
+                </ul>
+                <ul class="type-ul1">
+                    <li>
+                        <div></div><span>盗窃他人通讯设施 1238</span></li>
+                    <li>
+                        <div></div><span>盗窃电动自行车 450</span></li>
+                    <li>
+                        <div></div><span>其他盗窃 632</span></li>
+                    <li>
+                        <div></div><span>抢劫 960</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="HB ui-widget-content">
+        <div class="ratio">
+            <div class="ratio_icon"></div>
+            <p class="ratio_tittle">同比环比</p>
+            <div class="ratio_xl down"></div>
+            <ul class="ration_ul">
+                <li>
+                    <div></div><span>同比</span></li>
+                <li>
+                    <div></div><span>环比</span></li>
+                <li>
+                    <div></div><span>基数比</span></li>
+            </ul>
+        </div>
+        <div id="ratio_chart"></div>
+    </div>
+    <div id="map"></div>
+    <div class='messagePolice'>
+        <div class='header'>
+            <div class="mRight">
+                <p>渝 - GD162警</p>
+                <p>天安金盾小区派出所</p>
+            </div>
+        </div>
+        <div class='footer'>
+            <p>查看视频</p>
+            <p class="message-date">GPS: <span>2015-09-23</span></p>
+            <p class="message-time">16:04:37</p>
+        </div>
+        <i class='close'></i>
+    </div>
+    <div class='message_jy'>
+        <div class='header'>
+            <div class="mRight">
+                <p>张帆</p>
+                <p>NO.25468G</p>
+                <p>涪陵区天安金盾小区派出所</p>
+            </div>
+        </div>
+        <div class='footer'>
+            <p class="message-date">GPS: <span>2015-09-23</span></p>
+            <p class="message-time">16:04:37</p>
+        </div>
+        <i class='close'></i>
+    </div>
+    <div class='message_jq'>
+        <div class='header'>
+            <div class="mRight">
+                <p>渝 - GD162警</p>
+                <p>天安金盾小区派出所</p>
+            </div>
+        </div>
+        <div class='footer'>
+            <p class="message-date">GPS: <span>2015-09-23</span></p>
+            <p class="message-time">16:04:37</p>
+        </div>
+        <i class='close'></i>
+    </div>
+    <div class='message_jk'>
+        <div class='header'>
+            <div class="mRight">
+                <p>渝 - GD162警</p>
+                <p>天安金盾小区派出所</p>
+            </div>
+        </div>
+        <div class='footer'>
+            <p class="message-date">GPS: <span>2015-09-23</span></p>
+            <p class="message-time">16:04:37</p>
+        </div>
+        <i class='close'></i>
+    </div>
+</body>
+<script type="text/javascript" src="resources/lib/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="resources/lib/jquery-ui-1.11.2.js"></script>
+<script type="text/javascript" src="resources/lib/scrollBar.js"></script>
+<script type="text/javascript" src="resources/lib/echarts-all.js"></script>
+<script type="text/javascript" src="resources/js/index.js"></script>
+<script type="text/javascript" src="resources/js/left.js"></script>
+<script type="text/javascript" src="resources/js/right.js"></script>
+<script src="resources/lib/require.js" data-main="resources/js/main"></script>
+
+</html>

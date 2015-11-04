@@ -1,0 +1,584 @@
+/* 
+* @Author: Yaphet_peng
+* @Date:   2015-09-24 10:30:24
+* @Last Modified by:   Yaphet_peng
+* @Last Modified time: 2015-09-25 14:50:28
+*/
+
+
+/*公有的*/
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.right {
+    width: 375px;
+    height: 558px;
+    position: absolute;
+    right: -315px;
+    top: 93px;
+    z-index: 201;
+    overflow: hidden;
+}
+.cx {
+    width: 60px;
+    height: 60px;
+    background:  url(../images/serch1.png) no-repeat;
+}
+.cx:hover {
+     background:  url(../images/serch.png) no-repeat;
+}
+.right_div {
+    width: 315px;
+    height: 100%;
+    float: left;
+}
+.tab_title {
+    width: 60px;
+    height: 100%;
+    float: left;
+    background:  url(../images/bg-left.png) no-repeat;
+}
+
+.right_tittle {
+    width: 315px;
+    height: 60px;
+    float: left;
+    background: rgba(0,122,186,0.8)
+}
+.right_tittle p {
+    font-size: 24px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+/*为3个容器的父容器*/
+
+.tab_cotainer {
+    width: 315px;
+    float: right;
+    height: 498px;
+}
+
+.tab_gps {
+    width: 100%;
+    float: right;
+    height: 100%;
+}
+
+
+
+
+
+.tab_title .selected {
+    background: #fff;
+    color: #4D8DCA
+}
+
+.tab_title i {
+    width: 60px;
+    height: 20px;
+    font-family: "方正兰亭黑";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.5em;
+    display: inline-block;
+    text-align: center;
+}
+
+.monitor {
+    width: 60px;
+    height: 94px;
+    background:url(../images/cctv.png) no-repeat;
+    cursor: pointer;
+}
+.gps {
+    width: 60px;
+    height: 94px;
+    background:url(../images/gps.png) no-repeat;
+    cursor: pointer;
+}
+.alarm {
+    width: 60px;
+    height: 94px;
+    background:url(../images/info.png) no-repeat;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.tab_gps .top {
+    width: 100%;
+    height: 30px;
+    background: #5D9CEC;
+}
+
+.tab_gps .top span {
+    background: #202b31;
+    color: #546e7b;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 30px;
+    text-align: center;
+}
+
+.tab_gps .top span.selected {
+    background: #0095d9;
+    color: #fff;
+}
+
+table.ploiceCar,
+table.car,
+.alarm_table,
+.monitor_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+table.ploiceCar tbody tr,
+table.car tbody tr,
+.alarm_table tbody tr,
+.monitor_table tbody tr {
+    text-align: center;
+    height: 94px; 
+}
+
+
+.alarm_table tbody tr p:nth-child(1),
+.monitor_table tbody tr p:nth-child(1) {
+    font-size: 20px;
+    color:  #fff;
+    float: left;
+    margin-left: 7px;
+    width: 150px;
+}
+
+
+.alarm_table tbody tr p:nth-child(2),
+.monitor_table tbody tr p:nth-child(2)  {
+    font-size: 18px;
+    color:  #bcc1c6;
+    float: left;
+    margin-left: 20px;
+}
+table.car tbody tr p:nth-child(1),
+table.ploiceCar tbody tr p:nth-child(1) {
+     font-size: 20px;
+    color:  #fff;
+    float:  left;
+    margin-left:  22px;
+  
+}
+table.car tbody tr p:nth-child(2),
+table.ploiceCar tbody tr p:nth-child(2) {
+     font-size: 18px;
+    color:  #bcc1c6;
+    float:  left;
+    margin-left:  19px;
+  
+}
+table.ploiceCar tbody tr:nth-child(2n+1),
+table.car tbody tr:nth-child(2n+1),
+.alarm_table tbody tr:nth-child(2n+1),
+.monitor_table tbody tr:nth-child(2n+1) {
+    background: rgba(23,94,130,0.9);
+}
+
+table.ploiceCar tbody tr:nth-child(2n),
+table.car tbody tr:nth-child(2n),
+.alarm_table tbody tr:nth-child(2n),
+.monitor_table tbody tr:nth-child(2n) {
+    background: rgba(23,94,130,0.75);
+}
+
+table.car tbody td span {
+    width: 100%;
+    height: 20px;
+    line-height: 25px;
+    display: block;
+}
+
+
+/*警情部分*/
+
+.alarm_con {
+    width: 100%;
+    float: right;
+    height: 100%;
+}
+
+
+/*监控部分*/
+
+.monitor_con {
+    width: 100%;
+    float: right;
+    height: 100%;
+    z-index: 203;
+    
+}
+
+.right_footer {
+    display: inline-block;
+    width: 500px;
+    position: relative;
+    right: 0px;
+    z-index: 226;
+    height: 30px;
+    background: #4B89DC url(../images/icon.png) no-repeat center;
+    background-position: -120px -568px;
+    cursor: pointer;
+}
+
+.con {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+/*搜索框*/
+
+.search {
+    float: right;
+    width: 500px;
+    height: 60px;
+}
+
+.search i {
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon.png) no-repeat center;
+    background-position: -227px 0px;
+    position: absolute;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.search .search_text {
+    width: -moz-calc(100% - 60px);
+    width: -webkit-calc(100% - 60px);
+    width: calc(100% - 60px);
+    margin-left: 60px;
+    height: 100%;
+    line-height: 60px;
+    background: #fff;
+    font-size: 24px;
+    color: #4B89DC;
+    text-indent: 1em;
+    contenteditable: "true";
+}
+
+
+/*警cha的提示框*/
+
+.messagePolice {
+    position: absolute;
+    left: -1000px;
+    top: 300px;
+    width: 360px;
+    height: 172px;
+    background: url(../images/tan-jc.png) no-repeat;
+
+    
+}
+.messagePolice .header {
+    color: #fff;
+}
+.messagePolice .footer {
+    color: #fff;
+    font-size: 18px;
+}
+.messagePolice .mRight {
+    width: auto;
+    margin-left: 92px;
+}
+.messagePolice .mRight p:nth-child(1) {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.messagePolice .mRight p:nth-child(2) {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.messagePolice .footer p:nth-child(1) {
+    float: left;
+    margin-left: 13px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.message-date {
+    float: left;
+    margin-top: 16px;
+    margin-left: 17px;
+}
+.message-time {
+    float: left;
+    margin-top: 16px;
+    margin-left: 17px;
+}
+.messagePolice .mRight li:nth-child(1) {
+    margin-bottom: 10px;
+}
+/*警情*/
+.message_jq {
+    position: absolute;
+    left: -1000px;
+    top: 300px;
+    width: 360px;
+    height: 172px;
+    background: url(../images/tan-jq.png) no-repeat;
+
+    
+}
+.message_jq .header {
+    color: #fff;
+}
+.message_jq .footer {
+    color: #fff;
+    font-size: 18px;
+}
+.message_jq .mRight {
+    width: auto;
+    margin-left: 92px;
+}
+.message_jq .mRight p:nth-child(1) {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.message_jq .mRight p:nth-child(2) {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.message_jq .footer p:nth-child(1) {
+    float: left;
+    margin-left: 101px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.message_jq .message-date {
+    float: left;
+    margin-top: 16px;
+    margin-left: 17px;
+}
+.message_jq .message-time {
+    float: left;
+    margin-top: 16px;
+    margin-left: 17px;
+}
+.message_jq .mRight li:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+/*监控*/
+.message_jk {
+    position: absolute;
+    right: -1000px;
+    top: 300px;
+    width: 360px;
+    height: 172px;
+    background: url(../images/tan-CCTV.png) no-repeat;
+
+    
+}
+.message_jk .header {
+    color: #fff;
+}
+.message_jk .footer {
+    color: #fff;
+    font-size: 18px;
+}
+.message_jk .mRight {
+    width: auto;
+    margin-left: 92px;
+}
+.message_jk .mRight p:nth-child(1) {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.message_jk .mRight p:nth-child(2) {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.message_jk .footer p:nth-child(1) {
+    float: left;
+    margin-left: 101px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.message_jk .message-date {
+    float: left;
+    margin-top: 16px;
+    margin-left: 17px;
+}
+.message_jk .message-time {
+    float: left;
+    margin-top: 16px;
+    margin-left: 17px;
+}
+.message_jk .mRight li:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+/*警员*/
+.message_jy {
+    position: absolute;
+    left: -1000px;
+    top: 0px;
+    width: 360px;
+    height: 172px;
+    background: url(../images/tan-jy.png) no-repeat;
+
+    
+}
+.message_jy .header {
+    color: #fff;
+}
+.message_jy .footer {
+    color: #fff;
+    font-size: 18px;
+}
+.message_jy .mRight {
+    width: auto;
+    margin-left: 92px;
+}
+.message_jy .mRight p:nth-child(1) {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+.message_jy .mRight p:nth-child(2) {
+    font-size: 18px;
+    margin-top: 19px;
+    margin-left: 43px;
+    float: left;
+}
+.message_jy .mRight p:nth-child(3) {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 9px;
+    float: left;
+}
+.message_jy .footer p:nth-child(1) {
+    float: left;
+    margin-left: 101px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.message_jy .message-date {
+    float: left;
+    margin-top: 16px;
+    margin-left: 17px;
+}
+.message_jy .message-time {
+    float: left;
+    margin-top: 16px;
+    margin-left: 17px;
+}
+.message_jy .mRight li:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+
+ .close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 6px;
+    top: 10px;
+    overflow: hidden;
+    text-indent: 100%;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 9999;
+}
+
+ .close:hover,
+ .close:focus {
+    outline: none;
+}
+
+ .close::before,
+ .close::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+}
+
+ .close:hover::before,
+ .close:hover::after {
+    background: #6e6e6e;
+}
+
+ .close::before {
+    -webkit-transform: translate(-50%, -50%) rotate(40deg);
+    transform: translate(-50%, -50%) rotate(40deg);
+}
+
+ .close::after {
+    -webkit-transform: translate(-50%, -50%) rotate(-40deg);
+    transform: translate(-50%, -50%) rotate(-40deg);
+}
+
+
+/*********************滚动条css*************************/
+
+.scroll {
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: auto;
+    overflow: hidden;
+}
+
+.scroll .scroll-bar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #185e82;
+    ;
+    background-repeat: repeat-y;
+}
+
+.scroll .scroll-bar > .scroll-button {
+    width: 6px;
+    background: #185e82;
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}

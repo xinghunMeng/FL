@@ -1,0 +1,55 @@
+{
+  "name": "my-project-name",
+ "main": "index.html",
+
+  "name": "nw-demo",
+
+  "description": "demo app of node-webkit",
+
+  "version": "0.1.0",
+
+  "keywords": [ "demo", "node-webkit" ],
+ 
+  "window": {
+
+    "title": "node-webkit demo",
+
+    "icon": "link.png",
+
+    "toolbar": false,
+
+    "frame": true,
+
+    "width": 1920,
+
+    "height": 1080,
+
+    "position": "mouse",
+
+    "min_width": 400,
+
+    "min_height": 200,
+
+    "max_width": 1920,
+
+    "max_height": 1080
+
+  },
+
+  "webkit": {
+
+    "plugin": true
+
+  },
+
+  "devDependencies": {
+    "connect-livereload": "^0.5.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
+
+
